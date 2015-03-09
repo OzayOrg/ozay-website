@@ -1,0 +1,479 @@
+/* ==========================================================================
+	Global Settings
+========================================================================== */
+
+/*
+* Boxsizing set to border box http://css-tricks.com/box-sizing/
+*/
+
+*, *:before, *:after { -webkit-box-sizing: border-box; -moz-box-sizing: border-box; box-sizing: border-box; }
+
+/*
+* Remove text-shadow in selection highlight: h5bp.com/i
+* These selection rule sets have to be separate.
+* Customize the background color to match your design.
+*/
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+*:focus { outline:none; }
+
+/*
+* Body settings, change it as required
+*/
+
+body { font-size: 1em; line-height: 1.4; font-family:Calibri, Arial, Helvetica, sans-serif }
+
+
+/*
+* Headings
+*/
+
+h1, h2, h3, h4, h5, h6 { font-family:Tahoma, Geneva, sans-serif; font-weight:bold; text-rendering: optimizeLegibility; margin-top:0px; color:#231F20; margin-bottom:20px; text-transform:uppercase; }
+
+
+/*
+* Paragraphs
+*/
+
+p { font-weight: normal; margin-top:0px; color:#313131; font-size:20px; line-height:24px; margin-bottom:30px; }
+
+@media (max-width:767px) {
+p { font-size:18px; line-height:22px; margin-bottom:15px; }
+}
+/*
+* Links
+*/
+
+a { color: #2ba6cb; text-decoration: none; line-height: inherit; }
+a:hover { /*color: #2795b6;*/ }
+a:focus { color: #2ba6cb; outline: none; }
+p a, p a:visited { line-height: inherit; }
+
+
+/*
+* A better looking default horizontal rule
+*/
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+
+/*
+* Remove the gap between images and the bottom of their containers: h5bp.com/i/440
+*/
+img {
+    vertical-align: middle; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic;
+}
+
+
+/*
+* Remove default fieldset styles.
+*/
+
+fieldset { border: 0; margin: 0; padding: 0; }
+
+
+/*
+* Allow only vertical resizing of textareas.
+*/
+
+textarea {
+    resize: vertical;
+}
+
+
+/* ==========================================================================
+	Helper classes
+========================================================================== */
+
+/*
+* Floats
+*/
+
+.left { float: left; }
+
+.right { float: right; }
+
+
+/*
+* Text Alignment
+*/
+
+.text-left { text-align: left; }
+
+.text-right { text-align: right; }
+
+.text-center { text-align: center; }
+
+
+/*
+* Image Alignment
+*/
+
+img.alignleft { float:left; margin:0 10px 10px 0; display: inline;}
+
+img.alignright { float:right; margin:0 0px 10px 10px; display: inline;}
+
+img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bottom:10px;}
+
+
+/*
+* Image replacement
+*/
+
+.ir {
+    background-color: transparent;
+    border: 0;
+    overflow: hidden;
+    /* IE 6/7 fallback */
+    *text-indent: -9999px;
+}
+
+.ir:before {
+    content: "";
+    display: block;
+    width: 0;
+    height: 150%;
+}
+
+/*
+* Hide from both screenreaders and browsers: h5bp.com/u
+*/
+
+.hidden {
+    display: none !important;
+    visibility: hidden;
+}
+
+/*
+* Hide only visually, but have it available for screenreaders: h5bp.com/v
+*/
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+* Extends the .visuallyhidden class to allow the element to be focusable
+* when navigated to via the keyboard: h5bp.com/p
+*/
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+* Hide visually and from screenreaders, but maintain layout
+*/
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+* Clearfix: contain floats
+*/
+
+/*
+* More semantic version as described in http://css-tricks.com/snippets/css/clear-fix/
+*/
+.group:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/*
+* overflow method for clearing floats
+*/
+.floatbox { overflow:hidden; }
+
+/*
+* older method of adding empty tags for clearing
+*/
+.clear { clear: both; height:1px; line-height:1px; }
+
+
+/*
+* Chromeframe
+*/
+.chromeframe { margin: 0.2em 0; background: #ccc; color: #000; padding: 0.2em 0; }
+
+/*
+* Other
+*/
+
+
+/* ==========================================================================
+	Layout
+========================================================================== */
+
+
+/* Container ---------------------- */
+#container { min-width:320px; overflow-x:hidden; }
+
+@media (min-width:1200px) {	
+	.container { max-width:1005px; width:100%;}
+}
+/* Header ---------------------- */
+#header { padding:35px 0px; background-image:url(../images/header-bg.jpg); background-size:cover; }
+
+/* Banner ---------------------- */
+#banner{ }
+
+/* Main Navigation ---------------------- */
+#main-navigation{ }
+
+/* Content ---------------------- */
+#content {  }
+
+/* Main ---------------------- */
+#main {  }
+
+/* Sidebar ---------------------- */
+#sidebar { }
+
+/* Footer ---------------------- */
+#footer { background-color:#fec912; padding:55px 0px 170px; background-image:url(../images/footer-bg.png); background-repeat:repeat-x; background-position:center bottom; text-align:center; }
+
+@media (max-width:992px) {	
+	#footer { padding-top:20px; padding-bottom:75px; }
+}
+
+/* ==========================================================================
+	Common Functionalities & UI Elements
+========================================================================== */
+
+/*
+* Post
+*/
+.post dl, .post dt, .post dd, .post ul, .post ol, .post li, .post h1, .post h2, .post h3, .post h4,
+.post h5, .post h6, .post pre, .post p, .post blockquote, .post th, .post td
+{ margin: 0; padding: 0; font-size: 14px; direction: ltr; }
+
+.post p { font-weight: normal; margin-top:0px; color:#313131; font-size:20px; line-height:24px; margin-bottom:30px; }
+.post p.lead { font-size: 17.5px; line-height: 1.6; margin-bottom: 17px; }
+
+.post h1, .post h2, .post h3, .post h4, .post h5, .post h6
+{ font-family:Tahoma, Geneva, sans-serif; font-weight:bold; text-rendering: optimizeLegibility; margin-top:0px; color:#231F20; margin-bottom:20px; text-transform:uppercase; }
+
+.post h1 small, .post h2 small, .post h3 small, .post h4 small, .post h5 small, .post h6 small
+{ font-size: 60%; color: #6f6f6f; line-height: 0; }
+
+.post h1 { font-size: 44px; }
+
+.post h2 { font-size: 40px;  }
+
+.post h3 { font-size: 27px; }
+
+.post h4 { font-size: 23px; }
+
+.post h5 { font-size: 17px; }
+
+.post h6 { font-size: 14px; }
+
+.post code { font-weight: bold; background: #ffff99; }
+
+/* Post - Lists ---------------------- */
+.post ul, .post ol, .post dl { font-size: 14px; line-height: 1.6; margin-bottom: 17px; list-style-position: outside; }
+
+.post ul li ul, .post ul li ol { margin-left: 20px; margin-bottom: 0; }
+
+.post ol { margin-left: 20px; }
+.post ol li ul, .post ol li ol { margin-left: 20px; margin-bottom: 0; }
+
+/* Post - Blockquotes ---------------------- */
+.post blockquote, .post blockquote p { line-height: 1.5; color: #6f6f6f; }
+
+.post blockquote { margin: 0 0 17px; padding: 9px 20px 0 19px; border-left: 1px solid #ddd; }
+.post blockquote cite { display: block; font-size: 13px; color: #555555; }
+.post blockquote cite:before { content: "\2014 \0020"; }
+.post blockquote cite a, .post blockquote cite a:visited { color: #555555; }
+
+
+@media (max-width:767px) {
+.post p { font-size:18px; line-height:22px; margin-bottom:15px; }
+}
+
+
+/* Logo ---------------------- */
+.logo { padding-top:135px; margin-bottom:25px; }
+.logo h1 { margin-bottom:0px; }
+@media (max-width:992px) {	
+	.logo { padding-top:25px; }
+}
+@media (max-width:767px) {	
+	.phone { text-align:center; }
+	.logo { text-align:center; padding-top:15px; }
+}
+/* App Store ---------------------- */
+.app-store img { margin-right:22px; }
+@media (max-width:767px) {
+	.app-store { text-align:center; }
+	.app-store img { margin-right:10px; }
+}
+/* section ---------------------- */
+.section { padding-top:55px; text-align:center; }
+.section h2 { font-size:48px; line-height:52px; }
+
+@media (max-width:992px) {
+	.section { padding-top:20px; }
+	.section h2 { font-size:40px; line-height:45px; }
+}
+@media (max-width:767px) {
+	.section h2 { font-size:30px; line-height:35px; margin-bottom:15px; }
+}
+/* Collaborators ---------------------- */
+.collaborators { padding-bottom:85px;  }
+.collaborators ul { margin:0px; padding:0px; list-style-type:none; background:url(../images/line.png) repeat-x center center; }
+.collaborators ul li { display:inline-block; }
+.collaborators ul li figure { margin:0px; border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%; }
+.collaborators ul li figure figcaption { font-size:20px; line-height:24px; font-family:Tahoma, Geneva, sans-serif; color:#313131; padding-top:10px; }
+.collaborators ul li figure img { border-left: 9px solid #fff;  border-right: 9px solid #fff; }
+.collaborators ul li:first-child { float:left;    }
+.collaborators ul li:last-child { float:right; }
+
+@media (max-width:992px) {
+	.collaborators { padding-bottom:20px;  }
+	
+}
+@media (max-width:767px) {
+	.collaborators { padding-bottom:20px;  }
+	.collaborators ul { background:none; }
+	.collaborators ul li { display:block;}
+	.collaborators ul li:first-child { float:none;    }
+	.collaborators ul li:last-child { float:none; }
+	.collaborators ul li figure { margin-bottom:15px;  }
+	.collaborators ul li figure figcaption { font-size:18px; line-height:22px; }
+}
+/* Features ---------------------- */
+.features { padding-bottom:5px; background-image:url(../images/bg.png); background-size:cover; }
+.features ul { margin:0px; padding:0px; list-style-type:none; }
+.features ul li { display:inline-block; width:25%; margin-right:12%;  }
+.features ul li:nth-child(3) { margin-right:0px; }
+.features ul li:last-child { margin-right:0px; }
+.features ul li figure { width:76px; height:76px; background:#fec912; border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%; line-height:76px; vertical-align:middle; margin:0px; margin-bottom:18px; margin-left:auto; margin-right:auto;}
+.features ul li h5 { color:#313131; font-size:20px; line-height:24px; font-weight:normal; padding-bottom:15px; position:relative; margin-bottom:15px; font-family:Calibri; }
+.features ul li h5:after { content:""; background:#fec912; width:80px; height:3px; left:50%; bottom:0px; position:absolute; border-radius:5px; -moz-border-radius:5px; -webkit-border-radius:5px; margin-left:-40px;  }
+
+@media (max-width:992px) {
+	.features ul li { margin-right:10%;  }
+}
+@media (max-width:767px) {
+	.features ul li { margin-right:10%;  }
+	.features ul li { width:35%}
+	.features ul li:nth-child(3) { margin-right:10%; }
+}
+@media (max-width:640px) {
+	.features ul li { margin-right:0px;  }
+	.features ul li { width:100%}
+	.features ul li:nth-child(3) { margin-right:0px; }
+}
+/* team ---------------------- */
+.team { margin-bottom:45px; }
+.team .row { margin-left:-30px; margin-right:-30px; }
+.team .members { padding-left:30px; padding-right:30px; margin-bottom:40px; }
+.team .members figure { padding:5px 4px;  border:1px solid #353535; margin:0px; }
+.team .members figure img { width:100%; }
+.team .members .details { padding:10px; border-left:1px solid #353535;  border-right:1px solid #353535;  border-bottom:1px solid #353535; }
+.team .members .details h5 { font-family:Calibri, sans-serif; margin:0px; font-size:20px; line-height:24px; font-weight:normal; text-transform:capitalize; color:#313131; }
+.team .members .details p { font-size:16px; line-height:19px; margin-bottom:0px; }
+
+@media (max-width:992px) {
+	.team {  margin-bottom:20px;  }
+	.team .row { margin-left:-15px; margin-right:-15px; }
+	.team .members { padding-left:15px; padding-right:15px; margin-bottom:20px; }
+}
+@media (max-width:767px) {
+	.team .row { margin-left:-10px; margin-right:-10px; }
+	.team .members { padding-left:10px; padding-right:10px; margin-bottom:15px; }
+}
+/* Sociable ---------------------- */
+.sociable ul { margin:0px; padding:0px; list-style-type:none; }
+.sociable ul li { width:76px; height:76px; border-radius:50%; -moz-border-radius:50%; -webkit-border-radius:50%; background:#fec912; display:inline-block; margin-right:15px; }
+.sociable ul li:last-child { margin-right:0px; }
+.sociable ul li a { display:block; line-height:76px; }
+
+@media (max-width:767px) {
+	.sociable ul li { margin-bottom:15px; margin-right:5px;  width:60px; height:60px; }
+	.sociable ul li a { line-height:60px; }
+}
+/* Footer ---------------------- */
+#footer .inner-container { max-width:515px; width:100%; margin:0 auto; }
+#footer .inner-container h2 { font-size:48px; line-height:52px;}
+
+
+@media (max-width:992px) {
+	#footer .inner-container h2 { font-size:40px; line-height:45px; }
+}
+@media (max-width:767px) {
+	#footer .inner-container h2 { font-size:30px; line-height:35px; margin-bottom:15px; }
+}
+/* Connect Form ---------------------- */
+.connect-form { text-align:left; }
+.connect-form ul { margin:0px; padding:0px; list-style-type:none; }
+.connect-form ul li { display:block; margin-bottom:10px;}
+.connect-form ul li.half { width:48%;}
+.connect-form ul li:last-child { clear:both; }
+.connect-form ul li input[type="email"], .connect-form ul li input[type="text"] { border:none; padding:0px 30px; background:#fcfcfc;  color:#c8c7c7;  }
+.connect-form ul li input[type="email"], .connect-form ul li input[type="text"], .connect-form ul li input[type="submit"] { display:block; width:100%; height:40px; line-height:40px; font-family:Tahoma, Geneva, sans-serif; font-size:20px; line-height:24px; }
+.connect-form ul li input[type="submit"] { text-align:center; border:2px solid #fcfcfc; color:#fcfcfc; background:background: rgb(255,201,17); /* Old browsers */
+/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIxMDAlIiB5Mj0iMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmYzkxMSIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjUwJSIgc3RvcC1jb2xvcj0iI2ZmZTAwMCIgc3RvcC1vcGFjaXR5PSIxIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmM5MTEiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+background: -moz-linear-gradient(left,  rgb(255,201,17) 0%, rgb(255,224,0) 50%, rgb(255,201,17) 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgb(255,201,17)), color-stop(50%,rgb(255,224,0)), color-stop(100%,rgb(255,201,17))); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(left,  rgb(255,201,17) 0%,rgb(255,224,0) 50%,rgb(255,201,17) 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(left,  rgb(255,201,17) 0%,rgb(255,224,0) 50%,rgb(255,201,17) 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(left,  rgb(255,201,17) 0%,rgb(255,224,0) 50%,rgb(255,201,17) 100%); /* IE10+ */
+background: linear-gradient(to right,  rgb(255,201,17) 0%,rgb(255,224,0) 50%,rgb(255,201,17) 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc911', endColorstr='#ffc911',GradientType=1 ); /* IE6-8 */
+ }
+@media (max-width:992px) {	
+	.connect-form ul li input[type="email"], .connect-form ul li input[type="text"] { padding:0px 15px; }
+	.connect-form ul li input[type="email"], .connect-form ul li input[type="text"], .connect-form ul li input[type="submit"] { font-size:18px; line-height:22px; }
+}
+
+.user-area { background:#636363; padding:0px 40px; }
+.user-area img { float:left; }
+.user-area .form { float:right; padding-top:10px;}
+.user-area .form input[type="text"], .user-area .form input[type="password"] { border:0px; background:#fff; padding:0px 30px; line-height:40px; height:40px; display:inline-block; width:250px; color:#c8c7c7; font-size:20px; font-family:Tahoma, Geneva, sans-serif; margin-left:5px; }
+
+@media (max-width:767px) {
+		.user-area { padding:0px 10px; }
+		.user-area img { float:none; }
+		.user-area .form  { float:none; }
+	.user-area .form input[type="text"], .user-area .form input[type="password"] { display:block; margin:0 0 10px; width:100%; padding:0px 10px; font-size:16px; }
+}
+/*--- Placeholder --- */
+input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { opacity:1;}
+input:-moz-placeholder, textarea:-moz-placeholder { opacity:1;}
+input::-moz-placeholder, textarea::-moz-placeholder { opacity:1;}
+input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity:1;}
+/* ------------------------------------- 
+ 	Cross Browser CSS
+	Documentation: http://rafael.adm.br/css_browser_selector/
+------------------------------------- */
+/*Use to make CSS 3 Rounded Corners , Text Shadows and Box Shadows for IE */
+/* .ie .css3 { behavior: url("assets/javascripts/vendor/PIE.htc"); position:relative; } */
+
