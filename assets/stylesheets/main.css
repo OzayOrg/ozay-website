@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 { font-family:Tahoma, Geneva, sans-serif; font-weight:bol
 * Paragraphs
 */
 
-p { font-weight: normal; margin-top:0px; color:#313131; font-size:20px; line-height:24px; margin-bottom:30px; }
+p { font-weight: normal; margin-top:0px; color:#313131; font-size:10px; line-height:24px; margin-bottom:30px; }
 
 @media (max-width:767px) {
 p { font-size:18px; line-height:22px; margin-bottom:15px; }
@@ -233,7 +233,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 /* Container ---------------------- */
 #container { min-width:320px; overflow-x:hidden; }
 
-@media (min-width:1200px) {	
+@media (min-width:1200px) {
 	.container { max-width:1005px; width:100%;}
 }
 /* Header ---------------------- */
@@ -257,7 +257,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 /* Footer ---------------------- */
 #footer { background-color:#fec912; padding:55px 0px 170px; background-image:url(../images/footer-bg.png); background-repeat:repeat-x; background-position:center bottom; text-align:center; }
 
-@media (max-width:992px) {	
+@media (max-width:992px) {
 	#footer { padding-top:20px; padding-bottom:75px; }
 }
 
@@ -320,10 +320,10 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 /* Logo ---------------------- */
 .logo { padding-top:135px; margin-bottom:25px; }
 .logo h1 { margin-bottom:0px; }
-@media (max-width:992px) {	
+@media (max-width:992px) {
 	.logo { padding-top:25px; }
 }
-@media (max-width:767px) {	
+@media (max-width:767px) {
 	.phone { text-align:center; }
 	.logo { text-align:center; padding-top:15px; }
 }
@@ -356,7 +356,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 
 @media (max-width:992px) {
 	.collaborators { padding-bottom:20px;  }
-	
+
 }
 @media (max-width:767px) {
 	.collaborators { padding-bottom:20px;  }
@@ -449,7 +449,7 @@ background: -ms-linear-gradient(left,  rgb(255,201,17) 0%,rgb(255,224,0) 50%,rgb
 background: linear-gradient(to right,  rgb(255,201,17) 0%,rgb(255,224,0) 50%,rgb(255,201,17) 100%); /* W3C */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffc911', endColorstr='#ffc911',GradientType=1 ); /* IE6-8 */
  }
-@media (max-width:992px) {	
+@media (max-width:992px) {
 	.connect-form ul li input[type="email"], .connect-form ul li input[type="text"] { padding:0px 15px; }
 	.connect-form ul li input[type="email"], .connect-form ul li input[type="text"], .connect-form ul li input[type="submit"] { font-size:18px; line-height:22px; }
 }
@@ -470,10 +470,9 @@ input::-webkit-input-placeholder, textarea::-webkit-input-placeholder { opacity:
 input:-moz-placeholder, textarea:-moz-placeholder { opacity:1;}
 input::-moz-placeholder, textarea::-moz-placeholder { opacity:1;}
 input:-ms-input-placeholder, textarea:-ms-input-placeholder { opacity:1;}
-/* ------------------------------------- 
+/* -------------------------------------
  	Cross Browser CSS
 	Documentation: http://rafael.adm.br/css_browser_selector/
 ------------------------------------- */
 /*Use to make CSS 3 Rounded Corners , Text Shadows and Box Shadows for IE */
 /* .ie .css3 { behavior: url("assets/javascripts/vendor/PIE.htc"); position:relative; } */
-
