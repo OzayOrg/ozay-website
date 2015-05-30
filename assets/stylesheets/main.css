@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 { font-family:Tahoma, Geneva, sans-serif; font-weight:bol
 * Paragraphs
 */
 
-p { font-weight: normal; margin-top:0px; color:#313131; font-size:10px; line-height:24px; margin-bottom:30px; }
+p { font-weight: normal; margin-top:0px; color:#313131; font-size:14px; line-height:24px; margin-bottom:30px; }
 
 @media (max-width:767px) {
 p { font-size:18px; line-height:22px; margin-bottom:15px; }
