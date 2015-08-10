@@ -44,7 +44,7 @@ h1, h2, h3, h4, h5, h6 { font-family:Tahoma, Geneva, sans-serif; font-weight:bol
 * Paragraphs
 */
 
-p { font-weight: normal; margin-top:0px; color:#313131; font-size:14px; line-height:24px; margin-bottom:30px; }
+p { font-weight: normal; margin-top:0px; color:#313131; font-size:20px; line-height:24px; margin-bottom:30px; }
 
 @media (max-width:767px) {
 p { font-size:18px; line-height:22px; margin-bottom:15px; }
@@ -69,9 +69,13 @@ hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin:
 /*
 * Remove the gap between images and the bottom of their containers: h5bp.com/i/440
 */
+
+
 img {
     vertical-align: middle; max-width: 100%; height: auto; -ms-interpolation-mode: bicubic;
 }
+
+
 
 
 /*
@@ -398,7 +402,7 @@ img.aligncenter { display:block; margin-left:auto; margin-right:auto; margin-bot
 .team .members figure img { width:100%; }
 .team .members .details { padding:10px; border-left:1px solid #353535;  border-right:1px solid #353535;  border-bottom:1px solid #353535; }
 .team .members .details h5 { font-family:Calibri, sans-serif; margin:0px; font-size:20px; line-height:24px; font-weight:normal; text-transform:capitalize; color:#313131; }
-.team .members .details p { font-size:16px; line-height:19px; margin-bottom:0px; }
+.team .members .details p { font-size:24px; line-height:19px; margin-bottom:0px; }
 
 @media (max-width:992px) {
 	.team {  margin-bottom:20px;  }
