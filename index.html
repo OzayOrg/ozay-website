@@ -18,16 +18,33 @@
 <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
+
+  <div id="fb-root"></div>
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script>
+
+
 <div id="container">
  <!-- User Area -->
 <div class="user-area group" class="col-xs-12 col-md-8">
   <img src="assets/images/user-area-img.png" alt="icon">
+
+
  <div class="form">
-    <a href="http://app.ozay.us/#/login"><img src="assets/images/login_img.png" class="col-md-12" >
+    <a href="https://app.ozay.us/#/login"><img src="assets/images/login_img.png" class="col-md-12" >
 <!--<input type="text" placeholder="User email">
 <input type="password" placeholder="Password">-->
     </div>
   </div>
+<!--
+  <div class="fb-page" data-href="https://www.facebook.com/OzayUS" data-small-header="true" data-adapt-container-width="true" data-hide-cover="true" data-show-facepile="false" data-show-posts="false"><div class="fb-xfbml-parse-ignore"><blockquote cite="https://www.facebook.com/OzayUS"><a href="https://www.facebook.com/OzayUS">Like us on Facebook</a></blockquote></div></div>
+-->
+
 </div>
   <!--/User Area -->
   <!-- Header -->
@@ -46,6 +63,12 @@
         </div>
       </div>
     </div>
+
+
+    </ul>
+    </div>
+
+
   </header>
   <!-- /Header -->
   <!-- content -->
@@ -71,6 +94,7 @@
             </figure>
           </li>
         </ul>
+
       </div>
     </div>
     <!-- /collaborators --></div>
@@ -148,11 +172,9 @@
       </div>
       <div class="sociable">
         <ul>
-          <li><a href="#"><img src="assets/images/google-plus.png" alt="google-plus"></a></li>
-          <li><a href="#"><img src="assets/images/facebook.png" alt="facebook"></a></li>
-          <li><a href="#"><img src="assets/images/linked-in.png" alt="linked-in"></a></li>
-          <li><a href="#"><img src="assets/images/twitter.png" alt="twitter"></a></li>
-        </ul>
+          <li><a href="https://www.facebook.com/OzayUS"><img src="assets/images/facebook.png" alt="facebook"></a></li>
+
+      </ul>
       </div>
     </div>
   </div>
