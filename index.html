@@ -15,6 +15,7 @@
 <link rel="stylesheet" href="assets/stylesheets/normalize.css">
 <link rel="stylesheet" href="assets/stylesheets/grid.min.css">
 <link rel="stylesheet" href="assets/stylesheets/main.css">
+<link rel="stylesheet" href="assets/stylesheets/popup_css.css">
 
 <!-- Javascript -->
 <script src="assets/javascripts/vendor/head.core.min.js" type="text/javascript" charset="utf-8"></script>
@@ -32,13 +33,30 @@
 
   <div id="container">
  <!-- User Area -->
-      <span style="flex-grow:1;">
+    <span style="flex-grow:1;">
         <img src="assets/images/user-area-img.png" style="height:50px; padding-left:10px">
-      </span>
-      <span>
+</span>
+       <!-- <a href="https://app.ozay.us/#/trynow"> -->
+         <a href="#popup1">
+          <img src="assets/images/trynow_orig.png" style="float:right;height:50px"></a>
+
+          <div id="popup1" class="overlay" align="center">
+           <div class="popup">
+               <h2> TRY NOW !!! </h2>
+               <a class="close" href="#">&times;</a>
+               <div class="content">
+                   <br>
+                   <h3>Register for Free and Begin Collaborating with OzayOrg Today!!</h3>
+                   <br>
+                   &nbsp;<input type="text" name="emailid" value="Email-Id">
+                 <br>
+                   &nbsp;<input type="password" name="password" aria-labelledby="Password"><br>
+                   &nbsp;&nbsp;&nbsp;&nbsp;<input type="button" value="CONNECT">
+               </div>
+           </div>
+              </div>
         <a href="https://app.ozay.us/#/login">
           <img src="assets/images/login_orig.png" style="float:right;height:50px"></a>
-      </span>
   </div>
 
   <!--/User Area -->
@@ -61,8 +79,6 @@
     </div>
 
 
-    </ul>
-    </div>
 
 
   </header>
@@ -212,7 +228,6 @@
     </div>
   </footer>
   <!-- /Footer -->
-</div>
 
 <!-- Javascript -->
 <script>window.jQuery || document.write('<script src="assets/javascripts/vendor/jquery-1.10.2.min.js"><\/script>')</script>
